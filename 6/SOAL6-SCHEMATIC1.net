@@ -1,0 +1,11 @@
+* source SOAL6
+R_R1         VIN N00283  4k  
+C_C1         0 N00348  2u  
+L_L1         N00283 VOUT  50mH  
+V_V2         VIN 0 DC 0Vdc AC 8Vac -40
+X_F1    N00283 N00348 0 VOUT SCHEMATIC1_F1 
+
+.subckt SCHEMATIC1_F1 1 2 3 4  
+F_F1         3 4 VF_F1 0.5
+VF_F1         1 2 0V
+.ends SCHEMATIC1_F1
